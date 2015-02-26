@@ -19,7 +19,7 @@
      <br /><br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Loan Amount: <asp:TextBox ID="tbLoanAmt" runat="server" ></asp:TextBox>
                   
-        <br /><br />      
+        &nbsp;<br /><br />      
         
         Annual Interest %: <asp:TextBox ID="tbAnnualInterest" runat="server" ></asp:TextBox>
         
@@ -29,24 +29,24 @@
         
         <br /><br />
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnClear" runat="server" Text="Clear" />
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
+        <tr>
+        <td align="right">&nbsp;</td><td align="left"></td><asp:Button ID="btnCalcPmt" runat="server" TabIndex="4" Text="Calculate" />
+         </td>
+        </tr>
         
         <br /><br />
                 
-        Monthly Payment: &nbsp; <asp:Label ID="lblMonthlyPmt" runat="server" Font-Size="XX-Large"></asp:Label>
+        Monthly Payment: &nbsp; <span class="bold"><asp:Label ID="lblMonthlyPmt" runat="server"></asp:Label></span>
         
         <br /><br />
-        <div class="table">
-        <asp:GridView ID="loanGridView" runat="server" BackColor="#66FFFF" ShowHeaderWhenEmpty="True" BorderColor="White">
-            <AlternatingRowStyle BackColor="White" />
-            <EditRowStyle BorderColor="#CCCCCC" />
-            <HeaderStyle BackColor="#333333" ForeColor="White" />
+        <asp:GridView ID="loanGridView" runat="server" CssClass="cssgridview">
+            <AlternatingRowStyle CssClass="alt" />
       
-            <RowStyle height="40px" />
+      
         </asp:GridView>
-            </div>
             
         </div>
     </form>
