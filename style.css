@@ -1,5 +1,20 @@
 /*--YangHong--*/
 
 body {
-background-color: pink;
+background-color:pink;
+font-family: "Times New Roman", Georgia, Serif;
+}
+
+header {
+text-align:left;
+border-bottom:double;
+border-color: white;
+font-size:x-large;
+font-weight:bold;
+font-style
+}
+
+.table {
+text-align: center;
+border-style:none;
 }
