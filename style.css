@@ -46,3 +46,17 @@ background-color:white;
         background-color:aqua;
 
     }
+
+    .color{
+        color:red;
+    }
+
+    .color {
+        color:red;
+    }
+
+    .errorMessage{
+        color:blue;
+        font-weight:bold;
+        font-size:20px;
+    }

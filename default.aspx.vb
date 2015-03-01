@@ -17,7 +17,7 @@ Partial Class _Default
         Dim nBalance As Double
         Dim principal As Double
         Dim monthlyPayment As Double
-        Dim paymentDate As Date
+        Dim paymentDate As Date = Now 'Use today's date
 
         'Declaring a table to hold the payment information.
         Dim table As DataTable = New DataTable("ParentTable")
